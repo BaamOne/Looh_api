@@ -1,0 +1,11 @@
+G:\LoohTech\looh_api\Looh.Domain\bin\Debug\net7.0\Looh.Domain.deps.json
+G:\LoohTech\looh_api\Looh.Domain\bin\Debug\net7.0\Looh.Domain.dll
+G:\LoohTech\looh_api\Looh.Domain\bin\Debug\net7.0\Looh.Domain.pdb
+G:\LoohTech\looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\LoohTech\looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.AssemblyInfoInputs.cache
+G:\LoohTech\looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.AssemblyInfo.cs
+G:\LoohTech\looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.csproj.CoreCompileInputs.cache
+G:\LoohTech\looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.dll
+G:\LoohTech\looh_api\Looh.Domain\obj\Debug\net7.0\refint\Looh.Domain.dll
+G:\LoohTech\looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.pdb
+G:\LoohTech\looh_api\Looh.Domain\obj\Debug\net7.0\ref\Looh.Domain.dll

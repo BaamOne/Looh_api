@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RTzHIGHTYGRlAP0YiIDU5lLAAvGLj5Zn5W2KX2vvOm9wGVO0bRBP+3C9BR0J9bHWmw6BAFpnpKalWg8hna9+kA==",
+  "success": true,
+  "projectFilePath": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>efb5960c-28d4-44c7-a3bd-c3a237fde5ff</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Looh.Contracts\Looh.Contracts.csproj" />
+    <ProjectReference Include="..\Looh.Application\Looh.Application.csproj" />
+    <ProjectReference Include="..\Looh.Infrastructure\Looh.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
