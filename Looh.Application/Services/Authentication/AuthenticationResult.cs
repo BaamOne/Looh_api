@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Looh.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,5 @@ namespace Looh.Application.Services.Authentication;
 
 
 public record AuthenticationResult(
-    Guid Id,
-    string FirstName,
-    string LastName,
-    string Email,
+    User User,
     string Token);

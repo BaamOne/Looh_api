@@ -1,7 +1,9 @@
 ﻿using Looh.Application.Common.Interfaces.Authentication;
 using Looh.Application.Common.Interfaces.Services;
+using Looh.Application.Persistence;
 using Looh.Application.Services.Authentication;
 using Looh.Infrastructure.Authentication;
+using Looh.Infrastructure.Persisntece;
 using Looh.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +26,7 @@ public static class DependencyInjection
         services.AddScoped<IAuthenticationService, AuthenticationService>();
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+        services.AddScoped<IUserRepository, UserRepository>();
 
         return services;
     }
