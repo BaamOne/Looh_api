@@ -1,2 +1,2 @@
 # Looh_api
- C# with DDD project pattern
+ C# with DDD and clean architecture
