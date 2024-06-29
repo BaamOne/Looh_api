@@ -1,8 +1,7 @@
 ﻿using ErrorOr;
 using Looh.Application.Authentication.Commands.Register;
-using Looh.Application.Services.Authentication.Commands;
-using Looh.Application.Services.Authentication.Common;
-using Looh.Application.Services.Authentication.Queries;
+using Looh.Application.Authentication.Common;
+using Looh.Application.Authentication.Queries.Login;
 using Looh.Contracts.Authentication;
 using Looh.Domain.Common.Errors;
 using MediatR;
@@ -13,7 +12,7 @@ namespace Looh.Api.Controllers;
 [Route("auth")]
 public class AuthenticationController : ApiController
 {
-    private readonly IMediator _mediator;
+    private readonly ISender _mediator;
 
     public AuthenticationController(IMediator mediator)
     {
@@ -45,9 +44,10 @@ public class AuthenticationController : ApiController
     }
 
     [HttpPost("login")]
-    public  IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        var authResult = _authenticationQueryService.Login(request.Email, request.Password);
+        var query =  new LoginQuery(request.Email, request.Password);
+        var authResult = await _mediator.Send(query);
 
         if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials) {
             return Problem(statusCode: StatusCodes.Status401Unauthorized, title: authResult.FirstError.Description);

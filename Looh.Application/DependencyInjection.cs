@@ -1,6 +1,8 @@
-﻿using Looh.Application.Services.Authentication.Commands;
-using Looh.Application.Services.Authentication.Queries;
+﻿
 using Microsoft.Extensions.DependencyInjection;
+using MediatR;
+using System.Reflection;
+
 namespace Looh.Application;
 
 public static class DependencyInjection
@@ -8,8 +10,7 @@ public static class DependencyInjection
 
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
-        services.AddScoped<IAuthenticationQueryService, AuthenticationQueryService>();
-        services.AddScoped<IAuthenticationCommandService, AuthenticationCommandService>();
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(DependencyInjection).GetTypeInfo().Assembly));
         return services;
     }
 

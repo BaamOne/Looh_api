@@ -1,11 +1,11 @@
-﻿using ErrorOr;
+﻿
+using ErrorOr;
+using Looh.Application.Authentication.Common;
 using Looh.Application.Common.Interfaces.Authentication;
 using Looh.Application.Common.Interfaces.Persistence;
-using Looh.Application.Services.Authentication.Common;
-using Looh.Domain.Entities;
 using Looh.Domain.Common.Errors;
+using Looh.Domain.Entities;
 using MediatR;
-
 
 namespace Looh.Application.Authentication.Commands.Register
 {
@@ -21,7 +21,7 @@ namespace Looh.Application.Authentication.Commands.Register
             _userRepository = userRepository;
         }
 
-        public async Task<ErrorOr<AuthenticationResult>> IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>.Handle(RegisterCommand command, CancellationToken cancellationToken)
+        async Task<ErrorOr<AuthenticationResult>> IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>.Handle(RegisterCommand command, CancellationToken cancellationToken)
         {
             //Check if user already exists
             var existingUser = _userRepository.GetUserByEmail(command.Email);

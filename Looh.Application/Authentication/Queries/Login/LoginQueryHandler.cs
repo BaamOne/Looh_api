@@ -1,7 +1,7 @@
 ﻿using ErrorOr;
+using Looh.Application.Authentication.Common;
 using Looh.Application.Common.Interfaces.Authentication;
 using Looh.Application.Common.Interfaces.Persistence;
-using Looh.Application.Services.Authentication.Common;
 using Looh.Domain.Common.Errors;
 using MediatR;
 

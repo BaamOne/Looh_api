@@ -58,3 +58,5 @@ G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
 G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\System.Text.Json.dll
 G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
 G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\ErrorOr.dll
+G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\MediatR.dll
+G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\MediatR.Contracts.dll

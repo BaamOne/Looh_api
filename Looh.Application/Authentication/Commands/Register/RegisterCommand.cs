@@ -1,5 +1,5 @@
 ﻿using ErrorOr;
-using Looh.Application.Services.Authentication.Common;
+using Looh.Application.Authentication.Common;
 using MediatR;
 using System;
 using System.Collections.Generic;
