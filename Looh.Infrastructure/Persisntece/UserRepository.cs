@@ -1,4 +1,4 @@
-﻿using Looh.Application.Persistence;
+﻿using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Domain.Entities;
 using System;
 using System.Collections.Generic;

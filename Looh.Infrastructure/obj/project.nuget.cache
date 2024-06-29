@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RQrRrN7U+pq67JDVkZDOCNN1aUWh/iY95MOgyhmNqZ/tSLLudfx3jlZnE4wwftpr2Fz66XigyqhCFia9YR65+Q==",
+  "dgSpecHash": "WLu7WO3q+GXFsjfSmqE0dAPzW7yXPmEbKTTXKdi1+T2gwVgOsk0jB1xaG43nl9lmBsiyzaCJV4mKsKuHLlKILg==",
   "success": true,
   "projectFilePath": "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",

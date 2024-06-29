@@ -1,53 +1,62 @@
-﻿using Looh.Api.Filters;
-using Looh.Application.Services.Authentication;
+﻿using ErrorOr;
+using Looh.Application.Authentication.Commands.Register;
+using Looh.Application.Services.Authentication.Commands;
+using Looh.Application.Services.Authentication.Common;
+using Looh.Application.Services.Authentication.Queries;
 using Looh.Contracts.Authentication;
+using Looh.Domain.Common.Errors;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Looh.Api.Controllers;
 
-[ApiController]
 [Route("auth")]
-public class AuthenticationController : ControllerBase
+public class AuthenticationController : ApiController
 {
+    private readonly IMediator _mediator;
 
-    private readonly IAuthenticationService _authenticationService;
-
-    public AuthenticationController(IAuthenticationService authenticationService)
+    public AuthenticationController(IMediator mediator)
     {
-        _authenticationService = authenticationService;
+        _mediator = mediator;
     }
 
     [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async  Task<IActionResult> Register(RegisterRequest request)
     {
-        var authResult = _authenticationService.Register(request.FirstName, request.LastName, request.Email, request.Password);
+        var command = new RegisterCommand(request.FirstName, request.LastName, request.Email, request.Password);
 
-        var response = new AuthenticationResponse(
-            authResult.User.Id,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.Token
+        ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
+
+        return authResult.Match(
+               authResult => Ok(MapAuthResult(authResult)),
+               errors => Problem(errors)
             );
-        
-        return Ok(response);
+
     }
 
+    private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+    {
+        return new AuthenticationResponse(
+                    authResult.User.Id,
+                    authResult.User.FirstName,
+                    authResult.User.LastName,
+                    authResult.User.Email,
+                    authResult.Token);
+    }
 
     [HttpPost("login")]
     public  IActionResult Login(LoginRequest request)
     {
-        var authResult = _authenticationService.Login(request.Email, request.Password);
+        var authResult = _authenticationQueryService.Login(request.Email, request.Password);
 
-        var response = new AuthenticationResponse(
-            authResult.User.Id,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.Token
-            );
+        if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials) {
+            return Problem(statusCode: StatusCodes.Status401Unauthorized, title: authResult.FirstError.Description);
+        }
 
-        return Ok(response);
+        return authResult.Match(
+                          authResult => Ok(MapAuthResult(authResult)),
+                                        errors => Problem(errors)
+                                                   );
     }
 
 

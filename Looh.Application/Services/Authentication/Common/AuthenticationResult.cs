@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Looh.Application.Services.Authentication;
+namespace Looh.Application.Services.Authentication.Common;
 
 
 public record AuthenticationResult(

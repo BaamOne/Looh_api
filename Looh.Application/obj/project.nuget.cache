@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RTzHIGHTYGRlAP0YiIDU5lLAAvGLj5Zn5W2KX2vvOm9wGVO0bRBP+3C9BR0J9bHWmw6BAFpnpKalWg8hna9+kA==",
+  "dgSpecHash": "iiMdHYDFOaXOeihvpmwXqO0OdivYUG7JkDXOdyQeSv3ubFdGg3WzQGBdcgp1Jn5su+KSXc+WvYZ8ZhsrIrvC1g==",
   "success": true,
   "projectFilePath": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
   ],
   "logs": []

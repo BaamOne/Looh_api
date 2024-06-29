@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ErrorOr;
+using Looh.Api.Common.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Options;
 using System.Diagnostics;
 
-namespace Looh.Api.Errors
+namespace Looh.Api.Common.Errors
 {
     public class LoohProblemDatailsFactory : ProblemDetailsFactory
     {
@@ -86,8 +88,12 @@ namespace Looh.Api.Errors
             {
                 problemDetails.Extensions["traceId"] = traceId;
             }
+            var errors = httpContext?.Items[HttpContextItemKeys.Errors] as List<Error>;
 
-            problemDetails.Extensions.Add("customProperty", "customValue");
+            if (errors != null)
+            {
+                problemDetails.Extensions.Add("errorCodes", errors.Select(e=> e.Code));
+            }   
 
         }
 

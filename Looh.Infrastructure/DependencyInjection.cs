@@ -1,7 +1,8 @@
 ﻿using Looh.Application.Common.Interfaces.Authentication;
+using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Application.Common.Interfaces.Services;
-using Looh.Application.Persistence;
-using Looh.Application.Services.Authentication;
+using Looh.Application.Services.Authentication.Commands;
+using Looh.Application.Services.Authentication.Queries;
 using Looh.Infrastructure.Authentication;
 using Looh.Infrastructure.Persisntece;
 using Looh.Infrastructure.Services;
@@ -23,7 +24,8 @@ public static class DependencyInjection
     {
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
 
-        services.AddScoped<IAuthenticationService, AuthenticationService>();
+        services.AddScoped<IAuthenticationQueryService, AuthenticationQueryService>();
+        services.AddScoped<IAuthenticationCommandService, AuthenticationCommandService>();
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddScoped<IUserRepository, UserRepository>();

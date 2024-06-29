@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Looh.Application.Persistence
+namespace Looh.Application.Common.Interfaces.Persistence
 {
     public interface IUserRepository
     {
