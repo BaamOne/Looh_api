@@ -23,6 +23,7 @@ namespace Looh.Application.Authentication.Commands.Register
 
         async Task<ErrorOr<AuthenticationResult>> IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>.Handle(RegisterCommand command, CancellationToken cancellationToken)
         {
+            await Task.CompletedTask;
             //Check if user already exists
             var existingUser = _userRepository.GetUserByEmail(command.Email);
 

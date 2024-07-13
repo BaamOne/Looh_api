@@ -1,16 +1,13 @@
-using Looh.Api.Common.Errors;
+using Looh.Api;
 using Looh.Application;
 using Looh.Infrastructure;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services
            .AddApplication()
+           .AddPresentation()
            .AddInfrastructure(builder.Configuration);
-    builder.Services.AddControllers();
-
-    builder.Services.AddSingleton<ProblemDetailsFactory, LoohProblemDatailsFactory>();
 }
 
 var app = builder.Build();

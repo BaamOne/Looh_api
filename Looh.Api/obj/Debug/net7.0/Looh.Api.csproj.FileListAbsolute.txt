@@ -60,3 +60,6 @@ G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\Syste
 G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\ErrorOr.dll
 G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\MediatR.dll
 G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\MediatR.Contracts.dll
+G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\Mapster.dll
+G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\Mapster.Core.dll
+G:\LoohTech\looh_api\Looh.Api\bin\Debug\net7.0\Mapster.DependencyInjection.dll
