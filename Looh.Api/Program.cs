@@ -1,3 +1,4 @@
+using Looh.Api;
 using Looh.Application;
 using Looh.Infrastructure;
 
@@ -5,12 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services
            .AddApplication()
+           .AddPresentation()
            .AddInfrastructure(builder.Configuration);
-    builder.Services.AddControllers();
 }
 
 var app = builder.Build();
 {
+    app.UseExceptionHandler("/error");
     app.UseHttpsRedirection();
     app.MapControllers();
     app.Run();

@@ -1,11 +1,12 @@
-﻿using Looh.Application.Services.Authentication;
+﻿
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MediatR;
+using System.Reflection;
+using Looh.Application.Common.Behaviors;
+using Looh.Application.Authentication.Commands.Register;
+using ErrorOr;
+using Looh.Application.Authentication.Common;
+using FluentValidation;
 
 namespace Looh.Application;
 
@@ -14,7 +15,9 @@ public static class DependencyInjection
 
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
-        services.AddScoped<IAuthenticationService, AuthenticationService>();
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(DependencyInjection).GetTypeInfo().Assembly));
+        services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+        services.AddValidatorsFromAssembly(typeof(DependencyInjection).GetTypeInfo().Assembly);
         return services;
     }
 
