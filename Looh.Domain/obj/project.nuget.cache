@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gto6S9GWx7/djKxEo+YIsiYzRJwwKnxR37XDrST1wLP6VFtik/zELS2omH/HbIoSNlIrSxgEf28wN2UP8x9Gzg==",
+  "dgSpecHash": "AlqgZxEwZ8xZf6Yi1WwlYwmrTsC4/6wH0EPW2mfPcLKb96qy4i5fdUIlAOLHCdl8+mhYMaXkOXtBqIUJw39bxw==",
   "success": true,
-  "projectFilePath": "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj",
+  "projectFilePath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512"
   ],

@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Looh.Application
-build_property.ProjectDir = G:\LoohTech\looh_api\Looh.Application\
+build_property.ProjectDir = G:\LoohTech\looh_api\Looh_api\Looh.Application\

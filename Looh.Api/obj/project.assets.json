@@ -1463,11 +1463,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Api\\Looh.Api.csproj",
+      "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Api\\Looh.Api.csproj",
       "projectName": "Looh.Api",
-      "projectPath": "G:\\LoohTech\\looh_api\\Looh.Api\\Looh.Api.csproj",
+      "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Api\\Looh.Api.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "G:\\LoohTech\\looh_api\\Looh.Api\\obj\\",
+      "outputPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1484,14 +1484,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj": {
-              "projectPath": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj"
+            "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
+              "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj"
             },
-            "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
-              "projectPath": "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj"
+            "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
+              "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj"
             },
-            "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
-              "projectPath": "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj"
+            "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
+              "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj"
             }
           }
         }
