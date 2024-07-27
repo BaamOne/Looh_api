@@ -134,3 +134,6 @@ G:\LoohTech\looh_api\Looh_api\Looh.Api\obj\Debug\net7.0\refint\Looh.Api.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Api\obj\Debug\net7.0\Looh.Api.pdb
 G:\LoohTech\looh_api\Looh_api\Looh.Api\obj\Debug\net7.0\Looh.Api.genruntimeconfig.cache
 G:\LoohTech\looh_api\Looh_api\Looh.Api\obj\Debug\net7.0\ref\Looh.Api.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
