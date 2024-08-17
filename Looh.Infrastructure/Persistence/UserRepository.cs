@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Looh.Infrastructure.Persisntece
+namespace Looh.Infrastructure.Persistense
 {
     public class UserRepository : IUserRepository
     {

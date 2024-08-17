@@ -6,6 +6,7 @@ using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Domain.Common.Errors;
 using Looh.Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 
 namespace Looh.Application.Authentication.Commands.Register
 {
@@ -13,6 +14,7 @@ namespace Looh.Application.Authentication.Commands.Register
     {
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
         private readonly IUserRepository _userRepository;
+        private readonly PasswordHasher<IdentityUser> _passwordHasher = new PasswordHasher<IdentityUser>();
 
 
         public RegisterCommandHandler(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
@@ -32,6 +34,10 @@ namespace Looh.Application.Authentication.Commands.Register
                 return Errors.User.DuplicateEmail;
             }
 
+            var dummyUser = new IdentityUser(); // Usado apenas para o tipo genérico.
+            var passwordHashed = _passwordHasher.HashPassword(dummyUser, command.Password);
+
+
             //Creat user (generate unique ID)
 
             var user = new User
@@ -39,7 +45,7 @@ namespace Looh.Application.Authentication.Commands.Register
                 FirstName = command.FirstName,
                 LastName = command.LastName,
                 Email = command.Email,
-                Password = command.Password
+                Password = passwordHashed
             };
             _userRepository.Add(user);
 

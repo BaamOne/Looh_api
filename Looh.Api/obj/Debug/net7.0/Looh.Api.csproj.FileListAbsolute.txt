@@ -137,3 +137,11 @@ G:\LoohTech\looh_api\Looh_api\Looh.Api\obj\Debug\net7.0\ref\Looh.Api.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Api\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll

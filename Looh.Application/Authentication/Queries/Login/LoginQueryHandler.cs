@@ -4,6 +4,7 @@ using Looh.Application.Common.Interfaces.Authentication;
 using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Domain.Common.Errors;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 
 namespace Looh.Application.Authentication.Queries.Login
 {
@@ -11,6 +12,7 @@ namespace Looh.Application.Authentication.Queries.Login
     {
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
         private readonly IUserRepository _userRepository;
+        private readonly PasswordHasher<IdentityUser> _passwordHasher = new PasswordHasher<IdentityUser>();
 
 
         public LoginQueryHandler(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
@@ -30,8 +32,11 @@ namespace Looh.Application.Authentication.Queries.Login
                 return Errors.Authentication.InvalidCredentials;
             }
 
+            var dummyUser = new IdentityUser(); // Usado apenas para o tipo genérico.
+            var result =  _passwordHasher.VerifyHashedPassword(dummyUser, user.Password, query.Password);
+
             //Check if password is correct
-            if (user.Password != query.Password)
+            if (result == PasswordVerificationResult.Failed)
             {
                 return Errors.Authentication.InvalidCredentials;
             }

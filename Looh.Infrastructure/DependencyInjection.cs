@@ -2,7 +2,7 @@
 using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Application.Common.Interfaces.Services;
 using Looh.Infrastructure.Authentication;
-using Looh.Infrastructure.Persisntece;
+using Looh.Infrastructure.Persistense;
 using Looh.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
