@@ -1,0 +1,62 @@
+# Diretório do Visual Studio
+.vs/
+
+# Pastas de build do Visual Studio
+bin/
+obj/
+
+# Arquivos de Log do Visual Studio
+*.log
+
+# Arquivos temporários do Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos de cache
+*.cache
+*.config
+*.idea/
+*.ide/
+
+# Pastas de pacotes NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Arquivos de travamento de pacotes
+project.lock.json
+project.fragment.lock.json
+
+# Arquivos de deploy do Visual Studio
+publish/
+.vscode/
+
+# Diretório de pacotes globais
+.nuget/
+
+# Logs do sistema
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos gerados pelo Resharper
+_ReSharper*/
+*.ReSharper*/
+
+# Diretórios de banco de dados local
+Migrations/
+App_Data/
+
+# Arquivos de cache do Rider
+.idea/
+*.sln.iml
+
+# Diretórios do Azure
+.terraform/
+
+# Arquivos temporários
+*.tmp
+*.temp
