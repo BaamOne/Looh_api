@@ -9,3 +9,15 @@ G:\LoohTech\looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.dll
 G:\LoohTech\looh_api\Looh.Contracts\obj\Debug\net7.0\refint\Looh.Contracts.dll
 G:\LoohTech\looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.pdb
 G:\LoohTech\looh_api\Looh.Contracts\obj\Debug\net7.0\ref\Looh.Contracts.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\bin\Debug\net7.0\Looh.Contracts.deps.json
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\bin\Debug\net7.0\Looh.Contracts.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\bin\Debug\net7.0\Looh.Contracts.pdb
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.AssemblyInfoInputs.cache
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.AssemblyInfo.cs
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.csproj.CoreCompileInputs.cache
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.sourcelink.json
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\refint\Looh.Contracts.dll
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.pdb
+G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\ref\Looh.Contracts.dll

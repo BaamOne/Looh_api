@@ -91,7 +91,10 @@
           "ErrorOr": "2.0.1"
         },
         "runtime": {
-          "Looh.Domain.dll": {}
+          "Looh.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

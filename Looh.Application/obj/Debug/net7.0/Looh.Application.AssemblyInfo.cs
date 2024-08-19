@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Looh.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+802aed977274a60a910ab58b2772815154b28c2c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Looh.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Looh.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
