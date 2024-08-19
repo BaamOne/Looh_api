@@ -1001,11 +1001,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj",
+      "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj",
       "projectName": "Looh.Application",
-      "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj",
+      "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\obj\\",
+      "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1016,14 +1016,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
-              "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\Looh.Domain.csproj"
+            "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
+              "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj"
             }
           }
         }
@@ -1032,6 +1033,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1075,7 +1081,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,41 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Api\\Looh.Api.csproj": {}
+    "G:\\LoohTech\\Looh_api\\Looh.Api\\Looh.Api.csproj": {}
   },
   "projects": {
-    "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Api\\Looh.Api.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Api\\Looh.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Api\\Looh.Api.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Api\\Looh.Api.csproj",
         "projectName": "Looh.Api",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Api\\Looh.Api.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Api\\Looh.Api.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Api\\obj\\",
+        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj"
               },
-              "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj"
               },
-              "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj"
               }
             }
           }
@@ -44,11 +45,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Mapster": {
               "target": "Package",
@@ -90,18 +96,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj",
         "projectName": "Looh.Application",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\obj\\",
+        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,14 +118,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\Looh.Domain.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj"
               }
             }
           }
@@ -128,6 +135,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -171,18 +183,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
         "projectName": "Looh.Contracts",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Contracts\\obj\\",
+        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -193,6 +205,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -205,6 +218,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -226,18 +244,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
         "projectName": "Looh.Domain",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Domain\\obj\\",
+        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -248,6 +266,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -260,6 +279,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -287,18 +311,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
         "projectName": "Looh.Infrastructure",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Infrastructure\\obj\\",
+        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -309,14 +333,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh_api\\Looh.Application\\Looh.Application.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj"
               }
             }
           }
@@ -325,6 +350,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -364,7 +394,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

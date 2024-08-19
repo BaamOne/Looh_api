@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Looh.Domain
-build_property.ProjectDir = G:\LoohTech\looh_api\Looh_api\Looh.Domain\
+build_property.ProjectDir = G:\LoohTech\Looh_api\Looh.Domain\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
