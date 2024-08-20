@@ -20,3 +20,4 @@ G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\refint\Looh.Contracts.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.pdb
 G:\LoohTech\looh_api\Looh_api\Looh.Contracts\obj\Debug\net7.0\ref\Looh.Contracts.dll
+G:\LoohTech\Looh_api\Looh.Contracts\obj\Debug\net7.0\Looh.Contracts.sourcelink.json

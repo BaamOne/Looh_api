@@ -22,3 +22,4 @@ G:\LoohTech\looh_api\Looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Domain\obj\Debug\net7.0\refint\Looh.Domain.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.pdb
 G:\LoohTech\looh_api\Looh_api\Looh.Domain\obj\Debug\net7.0\ref\Looh.Domain.dll
+G:\LoohTech\Looh_api\Looh.Domain\obj\Debug\net7.0\Looh.Domain.sourcelink.json

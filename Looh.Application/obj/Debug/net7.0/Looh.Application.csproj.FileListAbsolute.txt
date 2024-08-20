@@ -12,7 +12,6 @@ G:\LoohTech\looh_api\Looh.Application\obj\Debug\net7.0\ref\Looh.Application.dll
 G:\LoohTech\looh_api\Looh.Application\bin\Debug\net7.0\Looh.Domain.dll
 G:\LoohTech\looh_api\Looh.Application\bin\Debug\net7.0\Looh.Domain.pdb
 G:\LoohTech\looh_api\Looh.Application\obj\Debug\net7.0\Looh.Application.csproj.AssemblyReference.cache
-G:\LoohTech\looh_api\Looh.Application\obj\Debug\net7.0\Looh.Application.csproj.CopyComplete
 G:\LoohTech\looh_api\Looh_api\Looh.Application\bin\Debug\net7.0\Looh.Application.deps.json
 G:\LoohTech\looh_api\Looh_api\Looh.Application\bin\Debug\net7.0\Looh.Application.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Application\bin\Debug\net7.0\Looh.Application.pdb
@@ -28,3 +27,5 @@ G:\LoohTech\looh_api\Looh_api\Looh.Application\obj\Debug\net7.0\Looh.Application
 G:\LoohTech\looh_api\Looh_api\Looh.Application\obj\Debug\net7.0\refint\Looh.Application.dll
 G:\LoohTech\looh_api\Looh_api\Looh.Application\obj\Debug\net7.0\Looh.Application.pdb
 G:\LoohTech\looh_api\Looh_api\Looh.Application\obj\Debug\net7.0\ref\Looh.Application.dll
+G:\LoohTech\Looh_api\Looh.Application\obj\Debug\net7.0\Looh.Application.sourcelink.json
+G:\LoohTech\Looh_api\Looh.Application\obj\Debug\net7.0\Looh.App.55B8F290.Up2Date
