@@ -8,8 +8,8 @@ namespace Looh.Contracts.Authentication;
 
 
 public record RegisterRequest(
-    string FirstName,
-    string LastName,
+    string Name,
+    string Telephone,
     string Email,
     string Password);
 

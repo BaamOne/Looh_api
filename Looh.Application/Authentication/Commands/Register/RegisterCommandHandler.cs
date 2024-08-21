@@ -42,8 +42,8 @@ namespace Looh.Application.Authentication.Commands.Register
 
             var user = new User
             {
-                FirstName = command.FirstName,
-                LastName = command.LastName,
+                Name = command.Name,
+                Telephone = command.Telephone,
                 Email = command.Email,
                 Password = passwordHashed
             };

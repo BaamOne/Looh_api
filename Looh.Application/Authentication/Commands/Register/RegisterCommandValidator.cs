@@ -11,17 +11,16 @@ namespace Looh.Application.Authentication.Commands.Register
     {
         public RegisterCommandValidator()
         {
-            RuleFor(x => x.FirstName)
-                .NotEmpty().WithMessage("First Name is required")
-                .MaximumLength(50).WithMessage("First Name must not exceed 50 characters");
-
-            RuleFor(x => x.LastName)
-                .NotEmpty().WithMessage("Last Name is required")
-                .MaximumLength(50).WithMessage("Last Name must not exceed 50 characters");
+            RuleFor(x => x.Name)
+                .NotEmpty().WithMessage("Name is required")
+                .MaximumLength(200).WithMessage("First Name must not exceed 200 characters");
 
             RuleFor(x => x.Email)
                 .NotEmpty().WithMessage("Email is required")
                 .EmailAddress().WithMessage("Email is not valid");
+
+            RuleFor(x => x.Telephone)
+                .NotEmpty().WithMessage("Telephone is required");
 
             RuleFor(x => x.Password)
                 .NotEmpty().WithMessage("Password is required")
