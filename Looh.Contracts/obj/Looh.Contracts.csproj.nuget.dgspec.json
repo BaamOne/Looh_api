@@ -11,7 +11,7 @@
         "projectName": "Looh.Contracts",
         "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\obj\\",
+        "outputPath": "G:\\LoohTech\\looh_api\\Looh.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

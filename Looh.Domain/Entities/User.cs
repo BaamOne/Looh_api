@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Looh.Domain.Entities
+﻿namespace Looh.Domain.Entities
 {
     public class User
     {

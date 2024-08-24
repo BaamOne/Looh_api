@@ -21,7 +21,7 @@ public class EstablishmentController: ApiController
 
 
     [HttpPost("register")]
-    public async Task<ActionResult> Register(EstablishmentRequest request)
+    public async Task<IActionResult> Register(EstablishmentRequest request)
     { 
         return Ok();
     }
