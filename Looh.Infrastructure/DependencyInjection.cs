@@ -2,6 +2,7 @@
 using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Application.Common.Interfaces.Services;
 using Looh.Infrastructure.Authentication;
+using Looh.Infrastructure.Persistence.Establishments;
 using Looh.Infrastructure.Persistense;
 using Looh.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -9,12 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Looh.Infrastructure;
 
@@ -26,6 +22,7 @@ public static class DependencyInjection
         services.AddAuth(configuration);
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IEstablishmentRepository, EstablishmentRepository>();
 
         return services;
     }

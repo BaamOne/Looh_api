@@ -21,8 +21,8 @@ namespace Looh.Infrastructure.Persistense
 
         public User? GetUserByEmail(string email)
         {
-            return _users.SingleOrDefault(x => x.Email == email);        }
+            return _users.SingleOrDefault(x => x.Email == email);       
+        }
 
-     
     }
 }

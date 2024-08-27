@@ -1,7 +1,10 @@
-﻿using Looh.Contracts.Establishment;
+﻿using Looh.Application.Authentication.Commands.Register;
+using Looh.Contracts.Establishment;
 using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using ErrorOr;
+using Looh.Application.Establishments.Common;
 
 namespace Looh.Api.Controllers.Establishment;
 
@@ -21,9 +24,16 @@ public class EstablishmentController: ApiController
 
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register(EstablishmentRequest request)
-    { 
-        return Ok();
+    public async Task<IActionResult> Register(EstablishmentRegisterRequest request)
+    {
+        var command = _mapper.Map<RegisterCommand>(request);
+        ErrorOr<EstablishmentResult> establishmentResult = await _mediator.Send(command);
+
+        return establishmentResult.Match(
+            establishmentResult => Ok(_mapper.Map<EstablishmentResult>(establishmentResult)),
+            errors => Problem(errors)
+        );
+
     }
 
 

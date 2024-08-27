@@ -1,15 +1,12 @@
-﻿using ErrorOr;
-using Looh.Application.Authentication.Common;
-using MediatR;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Looh.Application.Establishment.Commands.Register
-{
-    public record EstablishmentRegisterCommand(
+namespace Looh.Contracts.Establishment;
+
+public record EstablishmentRegisterRequest(
      string Name,
      DateTime FundationDate,
      string Telephone,
@@ -18,5 +15,5 @@ namespace Looh.Application.Establishment.Commands.Register
      string Cpf,
      string WorkingHours,
      string IntervalHours,
-     List<string> WorkingDays) : IRequest<ErrorOr<AuthenticationResult>>;
-}
+     List<string> WorkingDays
+ );
