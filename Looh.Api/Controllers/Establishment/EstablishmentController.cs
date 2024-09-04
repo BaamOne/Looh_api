@@ -5,6 +5,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ErrorOr;
 using Looh.Application.Establishments.Common;
+using Looh.Application.Establishments.Commands.Register;
 
 namespace Looh.Api.Controllers.Establishment;
 
@@ -26,7 +27,20 @@ public class EstablishmentController: ApiController
     [HttpPost("register")]
     public async Task<IActionResult> Register(EstablishmentRegisterRequest request)
     {
-        var command = _mapper.Map<RegisterCommand>(request);
+        var command = _mapper.Map<EstablishmentRegisterCommand>(request);
+        ErrorOr<EstablishmentResult> establishmentResult = await _mediator.Send(command);
+
+        return establishmentResult.Match(
+                   establishmentResult => Ok(_mapper.Map<EstablishmentResult>(establishmentResult)),
+            errors => Problem(errors)
+        );
+
+    }
+
+    [HttpPost("get")]
+    public async Task<IActionResult> GetEstablishments(EstablishmentGetRequest request)
+    {
+        var command = _mapper.Map<EstablishmentRegisterCommand>(request);
         ErrorOr<EstablishmentResult> establishmentResult = await _mediator.Send(command);
 
         return establishmentResult.Match(

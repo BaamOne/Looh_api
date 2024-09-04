@@ -22,8 +22,4 @@
     <ProjectReference Include="..\Looh.Domain\Looh.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Establishments\Queries\" />
-  </ItemGroup>
-
 </Project>

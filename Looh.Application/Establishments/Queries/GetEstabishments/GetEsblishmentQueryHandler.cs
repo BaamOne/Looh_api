@@ -1,28 +1,30 @@
 ﻿using ErrorOr;
-using Looh.Application.Common.Interfaces.Persistence;
-using Looh.Application.Establishments.Common;
-using Looh.Domain.Entities;
-using MediatR;
-using Looh.Domain.Common.Errors;
 using Looh.Application.Authentication.Common;
-using System.Reflection.Metadata;
+using Looh.Application.Authentication.Queries.Login;
+using Looh.Application.Common.Interfaces.Authentication;
+using Looh.Application.Common.Interfaces.Persistence;
+using Looh.Application.Establishments.Commands.Register;
+using Looh.Application.Establishments.Common;
+using MediatR;
+using Microsoft.AspNetCore.Identity;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Looh.Application.Establishments.Commands.Register
+namespace Looh.Application.Establishments.Queries.GetEstabishments
 {
-    public class EstablishmentRegisterCommandHandler : IRequestHandler<EstablishmentRegisterCommand, ErrorOr<EstablishmentResult>>
+    public class GetEsblishmentQueryHandler : IRequestHandler<GetEsblishmentQuery, ErrorOr<ISet<EstablishmentResult>>>
     {
         private readonly IEstablishmentRepository _establishmentRepository;
 
-        public EstablishmentRegisterCommandHandler(IEstablishmentRepository establishmentRepository)
+        public GetEsblishmentQueryHandler(IEstablishmentRepository establishmentRepository)
         {
             _establishmentRepository = establishmentRepository;
         }
 
-        async Task<ErrorOr<EstablishmentResult>> IRequestHandler<EstablishmentRegisterCommand, ErrorOr<EstablishmentResult>> .Handle(EstablishmentRegisterCommand request, CancellationToken cancellationToken)
+        public async Task<ErrorOr<ISet<EstablishmentResult>>> Handle(GetEsblishmentQuery query, CancellationToken cancellationToken)
         {
             await Task.CompletedTask;
 
-            var establishment = _establishmentRepository.GetEstablishmentByCnpj(request.Cnpj);
+            var establishment = _establishmentRepository.GetEstablishmentByCnpj(query.Cnpj);
 
             if (establishment is not null)
             {
@@ -31,7 +33,7 @@ namespace Looh.Application.Establishments.Commands.Register
 
             establishment = new Establishment
             {
-                Name  = request.Name,
+                Name = request.Name,
                 FundationDate = request.FundationDate,
                 Telephone = request.Telephone,
                 Email = request.Email,

@@ -5,6 +5,7 @@
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; } = null!;
         public DateTime FundationDate { get; set; }
+        public DateTime CreatedDate { get; set; }
         public string Telephone { get; set; } = null!;
         public string Email { get; set; } = null!;
         public string Cnpj { get; set; } = null!;
