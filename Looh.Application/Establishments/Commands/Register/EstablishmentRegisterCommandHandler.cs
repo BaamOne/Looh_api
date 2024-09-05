@@ -24,12 +24,13 @@ namespace Looh.Application.Establishments.Commands.Register
 
             var establishment = _establishmentRepository.GetEstablishmentByCnpj(request.Cnpj);
 
-            if (establishment is not null)
+            if (establishment is not null && establishment.Count() > 0)
             {
                 return Errors.Establishment.DuplicateCnpj;
             }
 
-            establishment = new Establishment
+            Establishment establishmentCreate = new Establishment();
+            establishmentCreate = new Establishment
             {
                 Name  = request.Name,
                 FundationDate = request.FundationDate,
@@ -42,9 +43,10 @@ namespace Looh.Application.Establishments.Commands.Register
                 WorkingDays = request.WorkingDays,
                 CreatedDate = DateTime.Now
             };
-            _establishmentRepository.Add(establishment);
+            _establishmentRepository.Add(establishmentCreate);
 
-            return new EstablishmentResult(establishment);
+
+            return new EstablishmentResult(new HashSet<Establishment> { establishmentCreate });
 
         }
     }

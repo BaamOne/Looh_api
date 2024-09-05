@@ -10,7 +10,7 @@ namespace Looh.Application.Common.Interfaces.Persistence
     public interface IEstablishmentRepository
     {
 
-        Establishment? GetEstablishmentByCnpj(string cnpj);
+        HashSet<Establishment>? GetEstablishmentByCnpj(string cnpj);
         
         void Add(Establishment establishment);
 

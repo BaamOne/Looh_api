@@ -3,5 +3,5 @@ using Looh.Domain.Entities;
 
 namespace Looh.Application.Establishments.Common
 {
-    public record class EstablishmentResult(Establishment Establishment);
+    public record class EstablishmentResult(HashSet<Establishment> Establishment);
 }

@@ -5,16 +5,16 @@ namespace Looh.Infrastructure.Persistence.Establishments
 {
     internal class EstablishmentRepository : IEstablishmentRepository
     {
-        private static readonly List<Establishment > _Establishments = new();
+        private static readonly HashSet<Establishment> _Establishments = new();
 
         public void Add(Establishment establishment)
         {
             _Establishments.Add(establishment);
         }
 
-        public Establishment? GetEstablishmentByCnpj(string cnpj)
+        public HashSet<Establishment>? GetEstablishmentByCnpj(string cnpj)
         {
-            return _Establishments.SingleOrDefault(x => x.Cnpj == cnpj);
+            return  _Establishments.Where(x => x.Cnpj == cnpj).ToHashSet();
         }
     }
 }

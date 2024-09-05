@@ -13,5 +13,5 @@ namespace Looh.Application.Establishments.Queries.GetEstabishments
         string? Email,
        List<string>? WorkingDays,
         string? WorkingHoursStart,
-        string? WorkingHoursEnd) : IRequest<ErrorOr<ISet<EstablishmentResult>>>;
+        string? WorkingHoursEnd) : IRequest<ErrorOr<EstablishmentResult>>;
 }
