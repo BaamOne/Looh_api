@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Looh.Application.Establishments.Queries.GetEstabishments
 {
-    public record GetEsblishmentQuery(string? Name,
+    public record GetEstablishmentQuery(string? Name,
         string? Cnpj,
         string? Cpf,
         DateTime? FundationDateStart,

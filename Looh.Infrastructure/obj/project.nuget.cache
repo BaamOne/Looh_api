@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b1jUsMY+RaI=",
+  "dgSpecHash": "z3Vm7gDU6dg=",
   "success": true,
-  "projectFilePath": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
+  "projectFilePath": "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",

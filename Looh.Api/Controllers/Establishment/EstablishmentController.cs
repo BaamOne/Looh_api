@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using ErrorOr;
 using Looh.Application.Establishments.Common;
 using Looh.Application.Establishments.Commands.Register;
+using Looh.Application.Establishments.Queries.GetEstabishments;
 
 namespace Looh.Api.Controllers.Establishment;
 
@@ -37,10 +38,10 @@ public class EstablishmentController: ApiController
 
     }
 
-    [HttpPost("get")]
+    [HttpGet("get-establishments")]
     public async Task<IActionResult> GetEstablishments(EstablishmentGetRequest request)
     {
-        var command = _mapper.Map<EstablishmentRegisterCommand>(request);
+        var command = _mapper.Map<GetEstablishmentQuery>(request);
         ErrorOr<EstablishmentResult> establishmentResult = await _mediator.Send(command);
 
         return establishmentResult.Match(

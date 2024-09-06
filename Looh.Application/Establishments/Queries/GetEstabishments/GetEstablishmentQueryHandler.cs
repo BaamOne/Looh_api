@@ -12,16 +12,16 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Looh.Application.Establishments.Queries.GetEstabishments
 {
-    public class GetEsblishmentQueryHandler : IRequestHandler<GetEsblishmentQuery, ErrorOr<EstablishmentResult>>
+    public class GetEstablishmentQueryHandler : IRequestHandler<GetEstablishmentQuery, ErrorOr<EstablishmentResult>>
     {
         private readonly IEstablishmentRepository _establishmentRepository;
 
-        public GetEsblishmentQueryHandler(IEstablishmentRepository establishmentRepository)
+        public GetEstablishmentQueryHandler(IEstablishmentRepository establishmentRepository)
         {
             _establishmentRepository = establishmentRepository;
         }
 
-        public async Task<ErrorOr<EstablishmentResult>> Handle(GetEsblishmentQuery query, CancellationToken cancellationToken)
+        public async Task<ErrorOr<EstablishmentResult>> Handle(GetEstablishmentQuery query, CancellationToken cancellationToken)
         {
             await Task.CompletedTask;
 
