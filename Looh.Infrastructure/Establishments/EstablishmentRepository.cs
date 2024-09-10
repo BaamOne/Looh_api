@@ -1,7 +1,7 @@
 ﻿using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Domain.Entities;
 
-namespace Looh.Infrastructure.Persistence.Establishments
+namespace Looh.Infrastructure.Establishments
 {
     internal class EstablishmentRepository : IEstablishmentRepository
     {
@@ -14,7 +14,7 @@ namespace Looh.Infrastructure.Persistence.Establishments
 
         public HashSet<Establishment>? GetEstablishmentByCnpj(string cnpj)
         {
-            return  _Establishments.Where(x => x.Cnpj == cnpj).ToHashSet();
+            return _Establishments.Where(x => x.Cnpj == cnpj).ToHashSet();
         }
     }
 }
