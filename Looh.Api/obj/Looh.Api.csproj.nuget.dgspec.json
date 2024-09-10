@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "G:\\LoohTech\\looh_api\\Looh.Api\\Looh.Api.csproj": {}
+    "G:\\LoohTech\\Looh_api\\Looh.Api\\Looh.Api.csproj": {}
   },
   "projects": {
-    "G:\\LoohTech\\looh_api\\Looh.Api\\Looh.Api.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Api\\Looh.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Api\\Looh.Api.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Api\\Looh.Api.csproj",
         "projectName": "Looh.Api",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Api\\Looh.Api.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Api\\Looh.Api.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Api\\obj\\",
         "projectStyle": "PackageReference",
@@ -29,14 +29,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj"
               },
-              "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj"
               },
-              "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj"
               }
             }
           }
@@ -75,6 +75,14 @@
             "Microsoft.Extensions.Configuration.UserSecrets": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -100,14 +108,14 @@
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj",
         "projectName": "Looh.Application",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\looh_api\\Looh.Application\\obj\\",
+        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -125,8 +133,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj"
               }
             }
           }
@@ -187,12 +195,12 @@
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
         "projectName": "Looh.Contracts",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\obj\\",
         "projectStyle": "PackageReference",
@@ -248,14 +256,14 @@
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
         "projectName": "Looh.Domain",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\looh_api\\Looh.Domain\\obj\\",
+        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -315,12 +323,12 @@
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
+    "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
+        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
         "projectName": "Looh.Infrastructure",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
+        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -340,8 +348,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj"
+              "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
+                "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\Looh.Application.csproj"
               }
             }
           }

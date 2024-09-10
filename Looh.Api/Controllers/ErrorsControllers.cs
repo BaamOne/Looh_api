@@ -3,9 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Looh.Api.Controllers
 {
+    [Route("unhandled")]
     public class ErrorsControllers : ControllerBase
     {
-        [Route("/error")]
+        [HttpGet("error")]
         public IActionResult Error() {
             Exception? exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
 
