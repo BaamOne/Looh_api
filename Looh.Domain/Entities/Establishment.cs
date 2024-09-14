@@ -13,6 +13,5 @@
         public string WorkingHours { get; set; } = null!;
         public string IntervalHours { get; set; } = null!;
         public List<string> WorkingDays { get; set; } = new List<string>();
-
     }
 }

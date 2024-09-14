@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {}
+    "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {}
   },
   "projects": {
-    "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
+    "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
+        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
         "projectName": "Looh.Contracts",
-        "projectPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
+        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Contracts\\Looh.Contracts.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Contracts\\obj\\",
         "projectStyle": "PackageReference",

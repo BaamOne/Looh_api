@@ -2,10 +2,12 @@
 using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Application.Common.Interfaces.Services;
 using Looh.Infrastructure.Authentication;
-using Looh.Infrastructure.Establishments;
-using Looh.Infrastructure.Persistense;
+using Looh.Infrastructure.Persistence;
+using Looh.Infrastructure.Persistence.Establishments.Repository;
+using Looh.Infrastructure.Persistence.User.Repository;
 using Looh.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -19,11 +21,24 @@ public static class DependencyInjection
 
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, ConfigurationManager configuration)
     {
-        services.AddAuth(configuration);
+        services
+            .AddAuth(configuration)
+            .AddPersistance();
+
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+
+        return services;
+    }
+
+    private static IServiceCollection AddPersistance(this IServiceCollection services)
+    {
+        var connectionString = "name=ConnectionStrings:DefaultConnection"; 
+        var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));  
+
+        services.AddDbContext<LoohDbContext>(options =>
+            options.UseMySql(connectionString, serverVersion));  
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IEstablishmentRepository, EstablishmentRepository>();
-
         return services;
     }
 
