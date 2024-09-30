@@ -23,7 +23,9 @@ namespace Looh.Infrastructure.Persistence.Establishments.Repository
 
         public HashSet<Establishment>? GetEstablishmentByCnpj(string cnpj)
         {
-            return _Establishments.Where(x => x.Cnpj == cnpj).ToHashSet();
+            return  _dbContext.Establishments
+                                   .Where(x => x.Cnpj == cnpj)
+                                   .ToHashSet();
         }
     }
 }

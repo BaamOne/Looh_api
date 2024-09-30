@@ -1,36 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {}
+    "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {}
   },
   "projects": {
-    "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj": {
+    "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj",
+        "projectUniqueName": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Application\\Looh.Application.csproj",
         "projectName": "Looh.Application",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Application\\obj\\",
+        "projectPath": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Application\\Looh.Application.csproj",
+        "packagesPath": "C:\\Users\\fernando.engler\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fernando.engler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.movtech.com.br/repository/nuget-group/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj"
+              "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
+                "projectPath": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Domain\\Looh.Domain.csproj"
               }
             }
           }
@@ -87,30 +92,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj": {
+    "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Domain\\Looh.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
         "projectName": "Looh.Domain",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Domain\\Looh.Domain.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Domain\\obj\\",
+        "projectPath": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Domain\\Looh.Domain.csproj",
+        "packagesPath": "C:\\Users\\fernando.engler\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fernando.engler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.movtech.com.br/repository/nuget-group/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -154,37 +164,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
+    "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
         "projectName": "Looh.Infrastructure",
-        "projectPath": "G:\\LoohTech\\looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "G:\\LoohTech\\Looh_api\\Looh.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Infrastructure\\Looh.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\fernando.engler\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fernando.engler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.movtech.com.br/repository/nuget-group/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj": {
-                "projectPath": "G:\\LoohTech\\looh_api\\Looh.Application\\Looh.Application.csproj"
+              "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Application\\Looh.Application.csproj": {
+                "projectPath": "C:\\Users\\fernando.engler\\Documents\\GitHub\\Looh_api\\Looh.Application\\Looh.Application.csproj"
               }
             }
           }
@@ -245,7 +260,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
