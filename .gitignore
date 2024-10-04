@@ -60,3 +60,14 @@ App_Data/
 # Arquivos temporários
 *.tmp
 *.temp
+
+# Ignorar pastas de compilação
+**/obj/
+**/bin/
+**/Debug/
+**/Release/
+
+# Ignorar pastas específicas de versões do .NET
+**/Debug/net*/ 
+**/Release/net*/
+
