@@ -1,6 +1,11 @@
 ﻿using Looh.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Looh.Infrastructure.Persistence.Establishments.Configuration;
 
@@ -13,44 +18,52 @@ public class EstablishmentConfiguration : IEntityTypeConfiguration<Establishment
 
     public void ConfigureTableEstablishment(EntityTypeBuilder<Establishment> builder) 
     {
-        // Definindo a chave primária
-        builder.HasKey(e => e.Id);
+        builder.ToTable("Establishments");
 
-        // Definindo propriedades obrigatórias e tamanhos máximos
-        builder.Property(e => e.Name)
-            .IsRequired()
-            .HasMaxLength(100);
+        // Define a chave primária
+        builder.HasKey(x => x.Id);
 
-        builder.Property(e => e.FundationDate)
-            .IsRequired();
+        // Configura propriedades como obrigatórias
+        builder.Property(x => x.Name)
+               .IsRequired()
+               .HasMaxLength(100);  // Exemplo de limite de caracteres
 
-        builder.Property(e => e.CreatedDate)
-            .IsRequired();
+        builder.Property(x => x.FundationDate)
+               .IsRequired();
 
-        builder.Property(e => e.Telephone)
-            .HasMaxLength(15);
+        builder.Property(x => x.CreatedDate)
+               .IsRequired();
 
-        builder.Property(e => e.Email)
-            .HasMaxLength(100);
+        builder.Property(x => x.Telephone)
+               .IsRequired()
+               .HasMaxLength(15);
 
-        builder.Property(e => e.Cnpj)
-            .HasMaxLength(18);
+        builder.Property(x => x.Email)
+               .IsRequired()
+               .HasMaxLength(150);
 
-        builder.Property(e => e.Cpf)
-            .HasMaxLength(14);
+        builder.Property(x => x.Cnpj)
+               .IsRequired()
+               .HasMaxLength(14);  // Exemplo de limite de caracteres para CNPJ
 
-        builder.Property(e => e.WorkingHours)
-            .HasMaxLength(50);
+        builder.Property(x => x.Cpf)
+               .IsRequired()
+               .HasMaxLength(11);  // Exemplo de limite de caracteres para CPF
 
-        builder.Property(e => e.IntervalHours)
-            .HasMaxLength(50);
+        builder.Property(x => x.WorkingHours)
+               .IsRequired();
 
-        // Configurando a propriedade de lista de dias de trabalho
-        builder.Property(e => e.WorkingDays)
-            .HasConversion(
-                v => string.Join(',', v),
-                v => v.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList()
-            );
+        builder.Property(x => x.IntervalHours)
+               .IsRequired();
+
+        builder.Property(x => x.WorkingDays)
+               .IsRequired();
+
+        // Configura a relação entre Establishment e User (muitos para um)
+        builder.HasOne<Looh.Domain.Entities.User>()  // Define que um estabelecimento tem um usuário
+               .WithMany()  // Um usuário pode ter muitos estabelecimentos
+               .HasForeignKey(x => x.IdUser)  // Especifica que IdUser é a chave estrangeira
+               .OnDelete(DeleteBehavior.Cascade);  // Define o comportamento ao excluir usuário
 
     }
 

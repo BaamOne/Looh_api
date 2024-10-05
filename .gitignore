@@ -1,7 +1,12 @@
 # Diretório do Visual Studio
 .vs/
+.vs/**
 
-# Pastas de build do Visual Studio
+# Diretórios e arquivos do Visual Studio Code
+.vscode/
+.vscode/**
+
+# Diretórios de build do Visual Studio
 bin/
 obj/
 
@@ -31,7 +36,6 @@ project.fragment.lock.json
 
 # Arquivos de deploy do Visual Studio
 publish/
-.vscode/
 
 # Diretório de pacotes globais
 .nuget/
@@ -60,3 +64,19 @@ App_Data/
 # Arquivos temporários
 *.tmp
 *.temp
+
+# Ignorar pastas de compilação
+**/obj/
+**/bin/
+**/Debug/
+**/Release/
+
+# Ignorar pastas específicas de versões do .NET
+**/Debug/net*/ 
+**/Release/net*/
+
+# Padrões de pasta do Visual Studio
+.vs/ProjectSettings.json
+.vs/Solution.VC.db
+.vs/slnx.sqlite
+.vs/.sass-cache/

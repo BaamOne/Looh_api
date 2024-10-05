@@ -23,24 +23,25 @@ public static class DependencyInjection
     {
         services
             .AddAuth(configuration)
-            .AddPersistance();
+            .AddPersistance(configuration);
 
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 
         return services;
     }
 
-    private static IServiceCollection AddPersistance(this IServiceCollection services)
+    private static IServiceCollection AddPersistance(this IServiceCollection services, ConfigurationManager configuration)
     {
-        var connectionString = "name=ConnectionStrings:DefaultConnection"; 
-        var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));  
+        var connectionString = configuration.GetConnectionString("DEFAULT_STRING");
+        var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));
 
-        services.AddDbContext<LoohDbContext>(options =>
-            options.UseMySql(connectionString, serverVersion));  
+        services.AddDbContext<LoohDbContext>(options => options.UseMySql(connectionString, serverVersion));
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IEstablishmentRepository, EstablishmentRepository>();
+
         return services;
     }
+
 
     public static IServiceCollection AddAuth(this IServiceCollection services, ConfigurationManager configuration) 
     {

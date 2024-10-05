@@ -23,7 +23,7 @@ namespace Looh.Infrastructure.Persistence.User.Repository
 
         public Looh.Domain.Entities.User? GetUserByEmail(string email)
         {
-            return _users.SingleOrDefault(x => x.Email == email);
+            return _dbContext.Users.SingleOrDefault(x => x.Email == email);
         }
 
     }
