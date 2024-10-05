@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Looh.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55118ecd2e8a6b9bf3304e5e59bb422720236f62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b11553cecf564219e90bc5445cf80bf5568f9f1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Looh.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Looh.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,6 +11,7 @@ public record RegisterRequest(
     string Name,
     string Telephone,
     string Email,
-    string Password);
+    string Password,
+    DateTime DateBirth);
 
 

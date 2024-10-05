@@ -45,7 +45,9 @@ namespace Looh.Application.Authentication.Commands.Register
                 Name = command.Name,
                 Telephone = command.Telephone,
                 Email = command.Email,
-                Password = passwordHashed
+                Password = passwordHashed,
+                DateBirth = command.DateBirth
+
             };
             _userRepository.Add(user);
 

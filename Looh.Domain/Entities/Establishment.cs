@@ -3,6 +3,7 @@
     public class Establishment
     {
         public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid IdUser { get; set; }
         public string Name { get; set; } = null!;
         public DateTime FundationDate { get; set; }
         public DateTime CreatedDate { get; set; }
