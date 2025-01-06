@@ -17,16 +17,17 @@ var builder = WebApplication.CreateBuilder(args);
         {
             Title = "Looh API",
             Version = "v1",
-            Description = "A simple example ASP.NET Core Web API",
+            Description = "Looh Api",
             Contact = new Microsoft.OpenApi.Models.OpenApiContact
             {
                 Name = "Looh API",
-                Email = "looh@looh.com",
+                Email = "fernando.m.engler@gmail.com",
                 Url = new Uri("https://your-url.com")
             }
         });
-
+       
     });
+
 }
 
 var app = builder.Build();

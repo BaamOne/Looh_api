@@ -1,4 +1,5 @@
-﻿using Looh.Application.Common.Interfaces.Authentication;
+﻿using Looh.Api.Common.Utils;
+using Looh.Application.Common.Interfaces.Authentication;
 using Looh.Application.Common.Interfaces.Persistence;
 using Looh.Application.Common.Interfaces.Services;
 using Looh.Infrastructure.Authentication;
@@ -32,13 +33,9 @@ public static class DependencyInjection
 
     private static IServiceCollection AddPersistance(this IServiceCollection services, ConfigurationManager configuration)
     {
-        var connectionString = configuration.GetConnectionString("DEFAULT_STRING");
-        var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));
-
-        services.AddDbContext<LoohDbContext>(options => options.UseMySql(connectionString, serverVersion));
+        services.AddDbContext<LoohDbContext>(options => DbContextDefaultOptions.GetDefaultOptions(configuration, options));
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IEstablishmentRepository, EstablishmentRepository>();
-
         return services;
     }
 

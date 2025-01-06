@@ -14,7 +14,6 @@ public class LoohDbContext : DbContext
     { 
     
     }
-
     public DbSet<Looh.Domain.Entities.User> Users { get; set; } = null!;
 
     public DbSet<Establishment> Establishments { get; set; } = null!;
