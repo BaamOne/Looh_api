@@ -17,7 +17,6 @@ namespace Looh.Infrastructure.Persistence.User.Repository
         public void Add(Looh.Domain.Entities.User user)
         {
             _dbContext.Add(user);
-
             _dbContext.SaveChanges();
         }
 

@@ -13,8 +13,8 @@ public class Establishment
     public string WorkingHours { get; set; } = null!;
     public string IntervalHours { get; set; } = null!;
     public List<string> WorkingDays { get; set; } = new List<string>();
-
-    //Id_User que é responsável pelas informações do estabelecimento
     public Guid IdUser { get; set; }
+
+    public Establishment() { }
 }
 
